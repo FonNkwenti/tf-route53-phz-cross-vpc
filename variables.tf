@@ -3,23 +3,13 @@ variable "main_region" {
   default = "us-east-1"
 }
 
-variable "transit_region" {
-  type    = string
-  default = "us-east-1"
-}
 variable "account_id" {
   type    = number
   default = 123456789012
 }
-variable "cross_account_id" {
-  type    = number
-  default = 123456789012
-}
-
-
-variable "privateLink_service_name" {
+variable "app_name" {
   type    = string
-  default = ""
+  default = "my_app"
 }
 
 variable "environment" {

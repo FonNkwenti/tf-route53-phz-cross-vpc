@@ -13,7 +13,7 @@ provider "aws" {
   profile                  = "aai-admin"
   default_tags {
     tags = {
-      use_case    = "tutorial"
+      useCase    = "tutorial"
       Environment = var.environment
       Project     = var.project_name
       ManagedBy   = "terraform"

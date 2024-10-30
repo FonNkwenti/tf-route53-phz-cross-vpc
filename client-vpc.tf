@@ -25,7 +25,7 @@ module "client_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "5.2.1"
 
-  name                        = "${local.name}-spoke-a"
+  name                        = "${local.name}-client"
   instance_type               = "t2.micro"
   monitoring                  = false
   associate_public_ip_address = false

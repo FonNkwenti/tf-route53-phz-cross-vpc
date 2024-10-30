@@ -1,4 +1,3 @@
-////////////////////////////
 
 module "services_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
@@ -26,7 +25,6 @@ module "services_vpc" {
 }
 
 
-
 resource "aws_route" "services_to_client" {
   count                  = length(module.services_vpc.private_route_table_ids)
   route_table_id         = element(module.services_vpc.private_route_table_ids, count.index)
@@ -43,13 +41,11 @@ resource "aws_route" "client_to_services" {
 }
 
 
-
-
 module "services_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "5.2.1"
 
-  name                        = "${local.name}-services-client"
+  name                        = "${local.name}-service"
   instance_type               = "t2.micro"
   monitoring                  = false
   associate_public_ip_address = false
@@ -103,5 +99,10 @@ module "services_instance_security_group" {
   ]
 
 }
+
+
+
+
+
 
 
