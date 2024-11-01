@@ -1,5 +1,3 @@
-
-
 resource "aws_ec2_transit_gateway" "main_tgw" {
   description                     = "Main region Transit Gateway"
   default_route_table_association = "disable"
@@ -10,8 +8,6 @@ resource "aws_ec2_transit_gateway" "main_tgw" {
 
 }
 
-
-# attach service_provide_main VPC to transit gateway
 resource "aws_ec2_transit_gateway_vpc_attachment" "service_vpc_attachment" {
   subnet_ids                                      = module.services_vpc.private_subnets
   transit_gateway_id                              = aws_ec2_transit_gateway.main_tgw.id
@@ -19,7 +15,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "service_vpc_attachment" {
   transit_gateway_default_route_table_association = "false"
 
   tags = merge(local.common_tags, {
-    Name = "service-vpc"
+    Name = "service-vpc-attachment"
   })
 
 }
@@ -30,40 +26,40 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "client_vpc_attachment" {
   transit_gateway_default_route_table_association = "false"
 
   tags = merge(local.common_tags, {
-    Name = "spoke-a-vpc"
+    Name = "client-vpc-attachment"
   })
 
 }
 
-resource "aws_ec2_transit_gateway_route_table" "shared_services_rt" {
+resource "aws_ec2_transit_gateway_route_table" "services_rt" {
   transit_gateway_id = aws_ec2_transit_gateway.main_tgw.id
 
   tags = {
-    Name = "Shared-Services-Route-Table"
+    Name = "main-tgw-Route-Table"
   }
 }
 
 resource "aws_ec2_transit_gateway_route_table_association" "service_vpc_association" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.service_vpc_attachment.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.shared_services_rt.id
+  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.services_rt.id
 }
 
-resource "aws_ec2_transit_gateway_route_table_association" "client_association" {
+resource "aws_ec2_transit_gateway_route_table_association" "client_vpc_association" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.client_vpc_attachment.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.shared_services_rt.id
+  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.services_rt.id
 }
 
 # Add routes to enable communication between service and Spoke VPCs
 resource "aws_ec2_transit_gateway_route" "service_to_client" {
   destination_cidr_block         = local.client_vpc_cidr
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.shared_services_rt.id
+  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.services_rt.id
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.client_vpc_attachment.id
 }
 
 
 resource "aws_ec2_transit_gateway_route" "client_to_service" {
   destination_cidr_block         = local.services_vpc_cidr
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.shared_services_rt.id
+  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.services_rt.id
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.service_vpc_attachment.id
 }
 
