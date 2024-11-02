@@ -1149,8 +1149,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Copy of phz-internal-alb" id="RgCeba26ZA4U5ybQ98dK">
-    <mxGraphModel dx="823" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+  <diagram name="phz-internal-alb-complete" id="RgCeba26ZA4U5ybQ98dK">
+    <mxGraphModel dx="1372" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="QdU5hEQet0hSjcfFngFT-0" />
         <mxCell id="QdU5hEQet0hSjcfFngFT-1" parent="QdU5hEQet0hSjcfFngFT-0" />
