@@ -1,5 +1,5 @@
-# Using Terraform to build Route53 Private Hosted Zone across VPCs
-This project demonstrates how to use Terraform to Amazon Route53 Private Hosted Zone and share with VPCs in the same AWS Region
+# Using Terraform to build Route53 Private Hosted Zone (PHZ) across VPCs
+This project demonstrates how to use Terraform to build an Amazon Route53 Private Hosted Zone (PHZ) and share accross VPCs in the same AWS Region and AWS account.
 
 ## Prerequisites
 Before you begin, ensure you have the following:
@@ -15,14 +15,19 @@ Before you begin, ensure you have the following:
 
 ## Project Structure
 ```bash
-|- provider.tf
-|- local.tf
-|- main.tf
-|- output.tf
-|- route53.tf
-|- tgw.tf
-|- variables.tf
-|- terraform.tfvars
+|- A_Record/
+   |- diagrams/
+   |- provider.tf
+   |- local.tf
+   |- vpc.tf
+   |- output.tf
+   |- route53.tf
+   |- tgw.tf
+   |- variables.tf
+   |- terraform.tfvars
+   |- ec2.tf
+   |- security-groups.tf
+   |- webserver.sh
 
 ```
 ---
@@ -38,7 +43,7 @@ Clone this repository:
 ### Set up the PrivateLink Endpoint Service in the Service Producer's account
 1. Navigate to the project directory:
    ```bash
-   cd tf-route53-phz-cross-vpc/
+   cd tf-route53-phz-cross-vpc/A_Record/
    ```
 2. Initialize Terraform:
    ```bash
@@ -47,12 +52,13 @@ Clone this repository:
 3. Review and modify `variables.tf` if required
 4. Create a `terraform.tfvars` file in the root directory and pass in values for the variables.
    ```bash
-      region               = "eu-west-1"
-      account_id           = <<aws_account_id_for_service_producer>>
-      environment          = "dev"
-      project_name         = "tf-route53-phz-cross-vpc"
-      service_name         = "route53"
-      cost_center          = "237"
+      main_region              = "eu-west-1"
+      account_id               = 123456789123
+      environment              = "dev"
+      project_name             = "tf-route53-phz-cross-vpc"
+      service_name             = "services.internal"
+      cost_center              = "237"
+      ssh_key_pair             = <name_of_your_ec2_key_pair>
    ```
 5. Apply the Terraform configure:
    ```bash
@@ -63,17 +69,42 @@ Clone this repository:
    Apply complete! Resources: 27 added, 0 changed, 0 destroyed.
 
    Outputs:
-
+   client_instance_private_ip = "10.10.10.84"
+   connect_to_client_instance = "aws ec2-instance-connect ssh --instance-id i-04edc0836b71d48e6 --os-user ec2-user --connection-type eice --region eu-west-1"
+   my_app_dns_name = "app.services.internal"
+   services_instance_private_dns = "ip-10-15-10-100.eu-west-1.compute.internal"
+   services_instance_private_ip = "10.15.10.100"
 
    ```
 7.   
 
 
 ## Testing
-1. Connect to the EC2 instance using the EC2 Instance connect Terraform output command
-2. Test connectivity to the Endpoint service via the interface VPC endpoint
+1. Connect to the EC2 instance using the EC2 Instance connect Terraform output command from the Terraform output
    ```bash
-      sh-4.2$ curl http://myapp.internal
+
+   aws ec2-instance-connect ssh --instance-id i-04edc0836b71d48e6 --os-user ec2-user --connection-type eice --region eu-west-1
+
+   ```
+2. Test IP connectivity to the EC2-based service instance's private IP address copied from the Terraform output.
+   ```bash
+      ping 10.15.0.100
+   ```
+3. Test DNS resolution of the custom DNS name for the EC2-based instance
+   1. Using Ping
+      ```bash
+      ping app.services.internal"
+      ```
+
+
+   2. Using nslookup
+      ```bash
+      nslookup app.services.internal"
+      ```
+
+   3. Using CURL
+   ```bash
+   curl http://app.services.internal
       <html>
       <head>
          <title>Instance Information</title>
@@ -91,10 +122,10 @@ Clone this repository:
 
 ## Clean up
 
-### Remove all resources created by Terraform in the Service Consumer's account
-1. Navigate to the  `tf-route53-phz-cross-vpc` directory:
+### Remove all resources created by Terraform
+1. Navigate to the  `A_Record` directory:
    ```bash
-   cd  tf-route53-phz-cross-vpc/
+   cd  tf-route53-phz-cross-vpc/A_Record/
    ```
 2. Destroy all Terraform resources:
    ```bash

@@ -19,8 +19,8 @@ locals {
   dir_name = basename(path.cwd)
   name     = "${var.project_name}-${var.environment}"
 
-  services_vpc_cidr = "10.10.0.0/16"
-  client_vpc_cidr   = "10.15.0.0/16"
+  services_vpc_cidr = "10.15.0.0/16"
+  client_vpc_cidr   = "10.10.0.0/16"
 
   main_azs = slice(data.aws_availability_zones.available.names, 0, 2)
   main_az1 = data.aws_availability_zones.available.names[0]
