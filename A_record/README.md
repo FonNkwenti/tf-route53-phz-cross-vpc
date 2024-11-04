@@ -4,9 +4,9 @@ This project demonstrates how to use Terraform to build an Amazon Route53 Privat
 ## Prerequisites
 Before you begin, ensure you have the following:
 
-- 2 AWS accounts
+- AWS account
 - Terraform installed locally
-- AWS CLI installed and configured with appropriate access credentials profiles for the 2 AWS accounts
+- AWS CLI installed
 
 ## Architecture
 ![Diagram](route53_phz_cross_vpc-phz-ec2-steps-dark.webp)
@@ -33,24 +33,21 @@ Before you begin, ensure you have the following:
 ---
 ## Getting Started
 
-Clone this repository:
+1. Clone this repository:
 
    ```bash
    git clone https://github.com/FonNkwenti/tf-route53-phz-cross-vpc.git
    ```
-
-
-### Set up the PrivateLink Endpoint Service in the Service Producer's account
-1. Navigate to the project directory:
+2. Navigate to the project directory:
    ```bash
    cd tf-route53-phz-cross-vpc/A_Record/
    ```
-2. Initialize Terraform:
+3. Initialize Terraform:
    ```bash
    terraform init
    ```
-3. Review and modify `variables.tf` if required
-4. Create a `terraform.tfvars` file in the root directory and pass in values for the variables.
+4. Review and modify the variables in `variables.tf` if required
+5. Create a `terraform.tfvars` file in the root directory and pass in values for the following variables;
    ```bash
       main_region              = "eu-west-1"
       account_id               = 123456789123
@@ -60,11 +57,11 @@ Clone this repository:
       cost_center              = "237"
       ssh_key_pair             = <name_of_your_ec2_key_pair>
    ```
-5. Apply the Terraform configure:
+6. Apply the Terraform configure:
    ```bash
    terraform apply --auto-approve
    ```
-6. Your will have the following outputs: 
+7. Your will have the following outputs: 
    ```bash
    Apply complete! Resources: 27 added, 0 changed, 0 destroyed.
 
@@ -75,8 +72,7 @@ Clone this repository:
    services_instance_private_dns = "ip-10-15-10-100.eu-west-1.compute.internal"
    services_instance_private_ip = "10.15.10.100"
 
-   ```
-7.   
+   ```  
 
 
 ## Testing
@@ -93,18 +89,18 @@ Clone this repository:
 3. Test DNS resolution of the custom DNS name for the EC2-based instance
    1. Using Ping
       ```bash
-      ping app.services.internal"
+       ping app.services.internal
       ```
 
 
    2. Using nslookup
       ```bash
-      nslookup app.services.internal"
+      nslookup app.services.internal
       ```
 
    3. Using CURL
    ```bash
-   curl http://app.services.internal
+   [ec2-user@ip-10-10-10-153 ~]$ curl http://app.services.internal
       <html>
       <head>
          <title>Instance Information</title>
