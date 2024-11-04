@@ -431,20 +431,6 @@
         <mxCell id="NXIjC4EVva4Geq_rd2P8-11" value="Service VPC&lt;br&gt;10.15.0.0/16" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc2;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
           <mxGeometry x="1090" y="200" width="490" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="NXIjC4EVva4Geq_rd2P8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBorderColor=none;dashed=1;dashPattern=12 12;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="NXIjC4EVva4Geq_rd2P8-1" source="NXIjC4EVva4Geq_rd2P8-12" target="NXIjC4EVva4Geq_rd2P8-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1205" y="263" />
-              <mxPoint x="1205" y="260" />
-              <mxPoint x="660" y="260" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="NXIjC4EVva4Geq_rd2P8-14" value="Private Hosted Zone (PHZ) Association" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;arcSize=33;fontFamily=Helvetica;fontSize=16;fontColor=default;labelBorderColor=none;fillColor=none;gradientColor=none;" parent="NXIjC4EVva4Geq_rd2P8-13" vertex="1" connectable="0">
-          <mxGeometry x="-0.0275" y="-2" relative="1" as="geometry">
-            <mxPoint x="-1" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="NXIjC4EVva4Geq_rd2P8-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Region&lt;/font&gt;" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=1;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
           <mxGeometry x="280" y="80" width="1400" height="700" as="geometry" />
         </mxCell>
@@ -767,6 +753,20 @@
         </mxCell>
         <mxCell id="Vd2HlXlq58fLqC1MICCj-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="NXIjC4EVva4Geq_rd2P8-1" source="NXIjC4EVva4Geq_rd2P8-12" target="NXIjC4EVva4Geq_rd2P8-84" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NXIjC4EVva4Geq_rd2P8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBorderColor=none;dashed=1;dashPattern=12 12;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="NXIjC4EVva4Geq_rd2P8-1" source="NXIjC4EVva4Geq_rd2P8-12" target="NXIjC4EVva4Geq_rd2P8-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1205" y="263" />
+              <mxPoint x="1205" y="260" />
+              <mxPoint x="660" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NXIjC4EVva4Geq_rd2P8-14" value="Private Hosted Zone (PHZ) Association" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;arcSize=33;fontFamily=Helvetica;fontSize=16;fontColor=default;labelBorderColor=none;fillColor=none;gradientColor=none;" parent="NXIjC4EVva4Geq_rd2P8-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.0275" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" y="1" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
