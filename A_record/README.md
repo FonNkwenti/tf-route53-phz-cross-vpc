@@ -9,7 +9,7 @@ Before you begin, ensure you have the following:
 - AWS CLI installed and configured with appropriate access credentials profiles for the 2 AWS accounts
 
 ## Architecture
-![Diagram](route53_phz_cross_vpc-phz-internal-ec2-alb-complete-dark.webp)
+![Diagram](route53_phz_cross_vpc-phz-ec2-steps-dark.webp)
 
 ---
 
