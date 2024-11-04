@@ -1,13 +1,13 @@
 
 resource "aws_route53_zone" "my_service" {
-  name     = var.app_name
+  name     = var.service_name
   vpc {
     vpc_id = module.services_vpc.vpc_id
   }
-  comment = "Private hosted zone for ${var.app_name}"
+  comment = "Private hosted zone for ${var.service_name}"
 
   tags = {
-    Name = "${var.app_name}-phz"
+    Name = "${var.service_name}-phz"
   }
 
   lifecycle {
@@ -18,7 +18,7 @@ resource "aws_route53_zone" "my_service" {
 
 resource "aws_route53_record" "my_app" {
   zone_id = aws_route53_zone.my_service.id
-  name    = "app.${var.app_name}"
+  name    = "app.${var.service_name}"
   type    = "A"
   ttl     = 300
   records = [ module.services_instance.private_ip ]
