@@ -1,5 +1,5 @@
 # Using Terraform to build Route53 Private Hosted Zone across VPCs
-This project demonstrates how to use Terraform to Amazon Route53 Private Hosted Zone and share with VPCs in the same AWS Region
+This project demonstrates how to use Terraform to build an Amazon Route53 Private Hosted Zone (PHZ) and share with VPCs in the same AWS Region for the same AWS account.
 
 ## Prerequisites
 Before you begin, ensure you have the following:
