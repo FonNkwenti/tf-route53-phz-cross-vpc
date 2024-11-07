@@ -16,7 +16,6 @@ Before you begin, ensure you have the following:
 ## Project Structure
 ```bash
 |- A_Record/
-   |- diagrams/
    |- provider.tf
    |- local.tf
    |- vpc.tf
@@ -57,7 +56,7 @@ Before you begin, ensure you have the following:
       cost_center              = "237"
       ssh_key_pair             = <name_of_your_ec2_key_pair>
    ```
-6. Apply the Terraform configure:
+6. Apply the Terraform configuration:
    ```bash
    terraform apply --auto-approve
    ```
@@ -79,53 +78,40 @@ Before you begin, ensure you have the following:
 1. Connect to the EC2 instance using the EC2 Instance connect Terraform output command from the Terraform output
    ```bash
 
-   aws ec2-instance-connect ssh --instance-id i-04edc0836b71d48e6 --os-user ec2-user --connection-type eice --region eu-west-1
+   [ec2-user@ip-10-10-10-153 ~]$ aws ec2-instance-connect ssh --instance-id i-04edc0836b71d48e6 --os-user ec2-user --connection-type eice --region eu-west-1
 
    ```
 2. Test IP connectivity to the EC2-based service instance's private IP address copied from the Terraform output.
    ```bash
-      ping 10.15.0.100
+      [ec2-user@ip-10-10-10-153 ~]$ ping 10.15.0.100
    ```
 3. Test DNS resolution of the custom DNS name for the EC2-based instance
    1. Using Ping
       ```bash
-       ping app.services.internal
+       [ec2-user@ip-10-10-10-153 ~]$ ping app.services.internal
       ```
 
 
    2. Using nslookup
       ```bash
-      nslookup app.services.internal
+      [ec2-user@ip-10-10-10-153 ~]$ nslookup app.services.internal
       ```
 
    3. Using CURL
-   ```bash
-   [ec2-user@ip-10-10-10-153 ~]$ curl http://app.services.internal
-      <html>
-      <head>
-         <title>Instance Information</title>
-      </head>
-      <body>
-         <h1>Instance Information</h1>
-         <p><strong>Instance Name:</strong> i-0cbd519ffe7583c5d</p>
-         <p><strong>Private IP:</strong> 10.255.10.40</p>
-         <p><strong>Public IP:</strong> No public IP assigned</p>
-         <p><strong>Availability Zone:</strong> eu-west-1a</p>
-         <p><strong>Region:</strong> eu-west-1</p>
-      </body>
-      </html>
-   ```
+      ```bash
+      [ec2-user@ip-10-10-10-153 ~]$ curl http://app.services.internal
+      ```
 
 ## Clean up
 
 ### Remove all resources created by Terraform
 1. Navigate to the  `A_Record` directory:
    ```bash
-   cd  tf-route53-phz-cross-vpc/A_Record/
+   [ec2-user@ip-10-10-10-153 ~]$ cd tf-route53-phz-cross-vpc/A_Record/
    ```
 2. Destroy all Terraform resources:
    ```bash
-   terraform destroy --auto-apply
+   [ec2-user@ip-10-10-10-153 ~]$ terraform destroy --auto-apply
    ```
 ---
 
