@@ -34,6 +34,11 @@ variable "service_name" {
   type        = string
   default     = "web"
 }
+variable "service_ami" {
+  description = "AMI of private service"
+  type        = string
+  default     = "ami-1234564f06d663d2"
+}
 
 
 variable "vpc_cidr" {

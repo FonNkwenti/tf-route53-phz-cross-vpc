@@ -110,35 +110,6 @@ module "client_instance_connect_security_group" {
 
 }
 
-module "alb_sg" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 4.0"
-
-  name        = "alb-sg"
-  description = "Security group for ALB"
-  vpc_id      = module.services_vpc.vpc_id
-
-  ingress_cidr_blocks = ["0.0.0.0/0"]
-  ingress_rules       = ["http-80-tcp"]
-  egress_rules        = ["all-all"]
-}
-
-module "web_server_sg" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 4.0"
-
-  name        = "web-server-sg"
-  description = "Security group for web servers"
-  vpc_id      = module.services_vpc.vpc_id
-
-  ingress_with_source_security_group_id = [
-    {
-      rule                     = "http-80-tcp"
-      source_security_group_id = module.alb_sg.security_group_id
-    }
-  ]
-  egress_rules = ["all-all"]
-}
 
 
 
