@@ -1,9 +1,9 @@
 
 resource "aws_lb" "alb" {
   name               = "alb"
-  internal           = false
+  internal           = true
   load_balancer_type = "application"
-  subnets            = module.services_vpc.public_subnets
+  subnets            = module.services_vpc.private_subnets
   # security_groups    = [module.services_instance_security_group.security_group_id]
   security_groups    = [aws_security_group.alb_sg.id]
 
@@ -66,13 +66,13 @@ resource "aws_lb_listener" "alb_listener" {
 
 resource "aws_launch_template" "app_lt" {
   name_prefix   = "app-lt"
-  # image_id      = var.service_ami
-  image_id      = local.main_ami
+  image_id      = var.service_ami
+  # image_id      = local.main_ami
   instance_type = "t2.micro"
-  user_data = filebase64("${path.module}/webserver.sh")
+  # user_data = filebase64("${path.module}/webserver.sh")
   network_interfaces {
-    associate_public_ip_address = true 
-    subnet_id = element(module.services_vpc.public_subnets, 0)
+    associate_public_ip_address = false 
+    subnet_id = element(module.services_vpc.private_subnets, 0)
     security_groups  = [module.services_instance_security_group.security_group_id]
     # security_groups  = [aws_security_group.application_http.id]
   }
@@ -92,7 +92,7 @@ resource "aws_autoscaling_group" "asg" {
   desired_capacity   = 2
   max_size           = 3
   min_size           = 2
-  vpc_zone_identifier = module.services_vpc.public_subnets
+  vpc_zone_identifier = module.services_vpc.private_subnets
   launch_template {
     id      = aws_launch_template.app_lt.id
     version = "$Latest"

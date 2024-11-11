@@ -55,7 +55,6 @@ resource "aws_ec2_transit_gateway_route" "service_to_client" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.client_vpc_attachment.id
 }
 
-
 resource "aws_ec2_transit_gateway_route" "client_to_service" {
   destination_cidr_block         = local.services_vpc_cidr
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.services_rt.id

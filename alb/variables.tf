@@ -37,7 +37,7 @@ variable "service_name" {
 variable "service_ami" {
   description = "AMI of private service"
   type        = string
-  default     = "ami-1234564f06d663d2 "
+  default     = "ami-1234564f06d663d2"
 }
 
 
