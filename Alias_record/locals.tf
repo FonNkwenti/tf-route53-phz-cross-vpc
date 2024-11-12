@@ -28,8 +28,6 @@ locals {
 
   main_ami = data.aws_ami.amazon_linux_2.id
 
-  instance_name = "${local.name}-saas"
-
   common_tags = {
     Service = var.service_name
   }

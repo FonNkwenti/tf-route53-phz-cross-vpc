@@ -3,7 +3,7 @@ module "services_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"
 
-  name = "${local.name}-services-vpc"
+  name = "services-vpc"
   cidr = local.services_vpc_cidr
 
   azs             = local.main_azs
@@ -26,20 +26,20 @@ module "services_vpc" {
 
 
 module "client_vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 5.0"
+  source                = "terraform-aws-modules/vpc/aws"
+  version               = "~> 5.0"
 
-  name = "${local.name}-client-vpc"
-  cidr = local.client_vpc_cidr
+  name                  = "client-vpc"
+  cidr                  = local.client_vpc_cidr
 
-  azs             = local.main_azs
-  private_subnets = [for k, v in local.main_azs : cidrsubnet(local.client_vpc_cidr, 8, k + 10)]
+  azs                   = local.main_azs
+  private_subnets       = [for k, v in local.main_azs : cidrsubnet(local.client_vpc_cidr, 8, k + 10)]
 
-  enable_nat_gateway = false
-  single_nat_gateway = false
+  enable_nat_gateway    = false
+  single_nat_gateway    = false
 
-  enable_dns_hostnames = true
-  enable_dns_support   = true
+  enable_dns_hostnames  = true
+  enable_dns_support    = true
 
   tags = merge(local.common_tags, {
     Name = "${local.name}-client-vpc"
@@ -62,9 +62,11 @@ resource "aws_route" "client_to_services" {
 
 
 resource "aws_ec2_instance_connect_endpoint" "client_instance" {
-  subnet_id  = element(module.client_vpc.private_subnets, 0)  
-  depends_on = [module.client_instance]
-  security_group_ids = [module.client_instance_connect_security_group.security_group_id]
+  subnet_id           = element(module.client_vpc.private_subnets, 0)  
+  depends_on          = [module.client_instance]
+  security_group_ids  = [module.client_instance_connect_security_group.security_group_id]
 
-  tags = local.common_tags
+  tags                = merge(local.common_tags, {
+    Name              = "${local.name}-alb-sg"
+  })
 }
