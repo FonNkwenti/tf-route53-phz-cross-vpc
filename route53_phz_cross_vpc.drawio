@@ -1817,7 +1817,7 @@
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-83" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;fontColor=default;labelBorderColor=none;fontStyle=2;labelBackgroundColor=none;textShadow=0;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-78">
           <mxGeometry y="60" width="580" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="bgk1TdQtjLW1VvIc8pZ7-84" value="app.service.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-83">
+        <mxCell id="bgk1TdQtjLW1VvIc8pZ7-84" value="app.myservice.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-83">
           <mxGeometry width="149" height="26" as="geometry">
             <mxRectangle width="149" height="26" as="alternateBounds" />
           </mxGeometry>
