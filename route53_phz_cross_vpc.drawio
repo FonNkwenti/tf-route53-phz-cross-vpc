@@ -319,7 +319,7 @@
         <mxCell id="War9mPs1l9NcxkinXF0N-5" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;fontColor=default;labelBorderColor=none;fontStyle=2;labelBackgroundColor=none;textShadow=0;" parent="War9mPs1l9NcxkinXF0N-0" vertex="1">
           <mxGeometry y="60" width="333" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="War9mPs1l9NcxkinXF0N-6" value="app.service.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="War9mPs1l9NcxkinXF0N-5" vertex="1">
+        <mxCell id="War9mPs1l9NcxkinXF0N-6" value="app.myservice.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="War9mPs1l9NcxkinXF0N-5" vertex="1">
           <mxGeometry width="133" height="26" as="geometry">
             <mxRectangle width="133" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -656,7 +656,7 @@
         <mxCell id="NXIjC4EVva4Geq_rd2P8-89" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;fontColor=default;labelBorderColor=none;fontStyle=2;labelBackgroundColor=none;textShadow=0;" parent="NXIjC4EVva4Geq_rd2P8-84" vertex="1">
           <mxGeometry y="60" width="333" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="NXIjC4EVva4Geq_rd2P8-90" value="app.service.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="NXIjC4EVva4Geq_rd2P8-89" vertex="1">
+        <mxCell id="NXIjC4EVva4Geq_rd2P8-90" value="app.myservice.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="NXIjC4EVva4Geq_rd2P8-89" vertex="1">
           <mxGeometry width="133" height="26" as="geometry">
             <mxRectangle width="133" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -679,7 +679,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NXIjC4EVva4Geq_rd2P8-12" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(app.service.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
+        <mxCell id="NXIjC4EVva4Geq_rd2P8-12" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(app.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
           <mxGeometry x="1320" y="232.5" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Vd2HlXlq58fLqC1MICCj-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="NXIjC4EVva4Geq_rd2P8-1" source="NXIjC4EVva4Geq_rd2P8-12" target="NXIjC4EVva4Geq_rd2P8-84" edge="1">
@@ -715,7 +715,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="phz-internal-ec2-alb-complete" id="RgCeba26ZA4U5ybQ98dK">
-    <mxGraphModel dx="1937" dy="1064" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1154" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="QdU5hEQet0hSjcfFngFT-0" />
         <mxCell id="QdU5hEQet0hSjcfFngFT-1" parent="QdU5hEQet0hSjcfFngFT-0" />
@@ -1006,7 +1006,7 @@
         <mxCell id="QdU5hEQet0hSjcfFngFT-80" value="Availability Zone" style="fillColor=none;strokeColor=#232F3E;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" parent="QdU5hEQet0hSjcfFngFT-1" vertex="1">
           <mxGeometry x="1120" y="631" width="530" height="275" as="geometry" />
         </mxCell>
-        <mxCell id="QdU5hEQet0hSjcfFngFT-81" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(app.service.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="QdU5hEQet0hSjcfFngFT-1" vertex="1">
+        <mxCell id="QdU5hEQet0hSjcfFngFT-81" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(app.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="QdU5hEQet0hSjcfFngFT-1" vertex="1">
           <mxGeometry x="1245" y="192.5" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QdU5hEQet0hSjcfFngFT-82" value="Route53 Hosted Zones" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="QdU5hEQet0hSjcfFngFT-1" vertex="1">
@@ -1033,7 +1033,7 @@
         <mxCell id="QdU5hEQet0hSjcfFngFT-87" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;fontColor=default;labelBorderColor=none;fontStyle=2;labelBackgroundColor=none;textShadow=0;" parent="QdU5hEQet0hSjcfFngFT-82" vertex="1">
           <mxGeometry y="60" width="572" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="QdU5hEQet0hSjcfFngFT-88" value="app.service.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="QdU5hEQet0hSjcfFngFT-87" vertex="1">
+        <mxCell id="QdU5hEQet0hSjcfFngFT-88" value="app.myservice.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="QdU5hEQet0hSjcfFngFT-87" vertex="1">
           <mxGeometry width="143" height="26" as="geometry">
             <mxRectangle width="143" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1051,7 +1051,7 @@
         <mxCell id="JJCOod2mUnANbJGMooxS-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;fontColor=default;labelBorderColor=none;fontStyle=2;labelBackgroundColor=none;textShadow=0;" parent="QdU5hEQet0hSjcfFngFT-82" vertex="1">
           <mxGeometry y="86" width="572" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="JJCOod2mUnANbJGMooxS-6" value="alb.service.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="JJCOod2mUnANbJGMooxS-5" vertex="1">
+        <mxCell id="JJCOod2mUnANbJGMooxS-6" value="alb.myservice.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="JJCOod2mUnANbJGMooxS-5" vertex="1">
           <mxGeometry width="143" height="26" as="geometry">
             <mxRectangle width="143" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1061,7 +1061,7 @@
             <mxRectangle width="60" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JJCOod2mUnANbJGMooxS-8" value="app-alb-1234567890.us-west-2.elb.amazonaws.com" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="JJCOod2mUnANbJGMooxS-5" vertex="1">
+        <mxCell id="JJCOod2mUnANbJGMooxS-8" value="internal-alb-123456806.eu-west-1.elb.amazonaws.com" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="JJCOod2mUnANbJGMooxS-5" vertex="1">
           <mxGeometry x="203" width="369" height="26" as="geometry">
             <mxRectangle width="369" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1080,7 +1080,7 @@
             <mxPoint x="980" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24f7N93CkbOqS9Y6MGF--0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;startArrow=none;startFill=0;endArrow=none;endFill=0;" edge="1" parent="QdU5hEQet0hSjcfFngFT-1" source="_kWCi22fsj-03r95QKRz-0">
+        <mxCell id="24f7N93CkbOqS9Y6MGF--0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="QdU5hEQet0hSjcfFngFT-1" source="_kWCi22fsj-03r95QKRz-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1020.0000000000005" y="222.5" as="targetPoint" />
             <Array as="points">
@@ -1089,13 +1089,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_kWCi22fsj-03r95QKRz-0" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.service.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" vertex="1" parent="QdU5hEQet0hSjcfFngFT-1">
+        <mxCell id="_kWCi22fsj-03r95QKRz-0" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="QdU5hEQet0hSjcfFngFT-1" vertex="1">
           <mxGeometry x="1470" y="192.5" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="i1PK4fqS3OpLO6_z56dx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.323;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" edge="1" parent="QdU5hEQet0hSjcfFngFT-1" source="QdU5hEQet0hSjcfFngFT-81" target="JJCOod2mUnANbJGMooxS-5">
+        <mxCell id="i1PK4fqS3OpLO6_z56dx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.323;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="QdU5hEQet0hSjcfFngFT-1" source="QdU5hEQet0hSjcfFngFT-81" target="JJCOod2mUnANbJGMooxS-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i1PK4fqS3OpLO6_z56dx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" edge="1" parent="QdU5hEQet0hSjcfFngFT-1" source="_kWCi22fsj-03r95QKRz-0">
+        <mxCell id="i1PK4fqS3OpLO6_z56dx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="QdU5hEQet0hSjcfFngFT-1" source="_kWCi22fsj-03r95QKRz-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1500" y="160" as="targetPoint" />
           </mxGeometry>
@@ -1426,7 +1426,7 @@
         <mxCell id="cDpMovdqKkp22i0HmyFA-16" value="Availability Zone" style="fillColor=none;strokeColor=#232F3E;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
           <mxGeometry x="1180" y="611" width="530" height="275" as="geometry" />
         </mxCell>
-        <mxCell id="NqxRcppyMZP1TzHfi3GJ-10" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.service.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
+        <mxCell id="NqxRcppyMZP1TzHfi3GJ-10" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
           <mxGeometry x="1402.5" y="172.5" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NqxRcppyMZP1TzHfi3GJ-169" value="Zone: app.service.internal" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
@@ -1453,7 +1453,7 @@
         <mxCell id="NqxRcppyMZP1TzHfi3GJ-173" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;fontColor=default;labelBorderColor=none;fontStyle=2;labelBackgroundColor=none;textShadow=0;" parent="NqxRcppyMZP1TzHfi3GJ-169" vertex="1">
           <mxGeometry y="60" width="580" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="NqxRcppyMZP1TzHfi3GJ-174" value="app.service.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="NqxRcppyMZP1TzHfi3GJ-173" vertex="1">
+        <mxCell id="NqxRcppyMZP1TzHfi3GJ-174" value="app.myservice.internal" style="shape=partialRectangle;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;rounded=1;glass=0;align=center;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;fontStyle=0;labelBackgroundColor=none;textShadow=0;strokeWidth=4;" parent="NqxRcppyMZP1TzHfi3GJ-173" vertex="1">
           <mxGeometry width="149" height="26" as="geometry">
             <mxRectangle width="149" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1502,7 +1502,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="phz-internal-alb-steps" id="QCQfVR7Jvl8Rss1QwreF">
-    <mxGraphModel dx="2098" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="405" dy="229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-0" />
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-1" parent="bgk1TdQtjLW1VvIc8pZ7-0" />
@@ -1790,7 +1790,7 @@
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-76" value="Availability Zone" style="fillColor=none;strokeColor=#232F3E;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
           <mxGeometry x="1116" y="611" width="530" height="275" as="geometry" />
         </mxCell>
-        <mxCell id="bgk1TdQtjLW1VvIc8pZ7-77" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.service.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
+        <mxCell id="bgk1TdQtjLW1VvIc8pZ7-77" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
           <mxGeometry x="1338.5" y="172.5" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-78" value="Zone: app.service.internal" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
