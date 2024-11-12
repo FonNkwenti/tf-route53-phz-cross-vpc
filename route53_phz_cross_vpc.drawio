@@ -295,7 +295,7 @@
         <mxCell id="Ve3gVJgKyBqooyWphVfU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=oval;startFill=1;endArrow=oval;endFill=1;" parent="mtAr1kyN9IftIoCfLyEt-1" source="War9mPs1l9NcxkinXF0N-0" target="mtAr1kyN9IftIoCfLyEt-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="War9mPs1l9NcxkinXF0N-0" value="Zone: app.service.internal" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="mtAr1kyN9IftIoCfLyEt-1" vertex="1">
+        <mxCell id="War9mPs1l9NcxkinXF0N-0" value="Route53 Hosted Zones" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="mtAr1kyN9IftIoCfLyEt-1" vertex="1">
           <mxGeometry x="1175" y="106" width="333" height="86" as="geometry" />
         </mxCell>
         <mxCell id="War9mPs1l9NcxkinXF0N-1" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBorderColor=none;labelBackgroundColor=none;textShadow=0;" parent="War9mPs1l9NcxkinXF0N-0" vertex="1">
@@ -632,7 +632,7 @@
         <mxCell id="NXIjC4EVva4Geq_rd2P8-82" value="6" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;fontSize=14;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
           <mxGeometry x="1277" y="510.02" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="NXIjC4EVva4Geq_rd2P8-84" value="Zone: app.service.internal" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
+        <mxCell id="NXIjC4EVva4Geq_rd2P8-84" value="Route53 Hosted Zones" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="NXIjC4EVva4Geq_rd2P8-1" vertex="1">
           <mxGeometry x="1183" y="107" width="333" height="86" as="geometry" />
         </mxCell>
         <mxCell id="NXIjC4EVva4Geq_rd2P8-85" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBorderColor=none;labelBackgroundColor=none;textShadow=0;" parent="NXIjC4EVva4Geq_rd2P8-84" vertex="1">
@@ -1429,7 +1429,7 @@
         <mxCell id="NqxRcppyMZP1TzHfi3GJ-10" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
           <mxGeometry x="1402.5" y="172.5" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NqxRcppyMZP1TzHfi3GJ-169" value="Zone: app.service.internal" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
+        <mxCell id="NqxRcppyMZP1TzHfi3GJ-169" value="Route53 Hosted Zones" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" parent="k8oE8rLJ_aR2Wur4B68Q-1" vertex="1">
           <mxGeometry x="1143" y="50" width="580" height="86" as="geometry" />
         </mxCell>
         <mxCell id="NqxRcppyMZP1TzHfi3GJ-170" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBorderColor=none;labelBackgroundColor=none;textShadow=0;" parent="NqxRcppyMZP1TzHfi3GJ-169" vertex="1">
@@ -1502,7 +1502,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="phz-internal-alb-steps" id="QCQfVR7Jvl8Rss1QwreF">
-    <mxGraphModel dx="405" dy="229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1775" dy="1005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-0" />
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-1" parent="bgk1TdQtjLW1VvIc8pZ7-0" />
@@ -1793,7 +1793,7 @@
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-77" value="Private Hosted Zone&amp;nbsp;&lt;div&gt;(alb.myservice.internal)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.hosted_zone;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
           <mxGeometry x="1338.5" y="172.5" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bgk1TdQtjLW1VvIc8pZ7-78" value="Zone: app.service.internal" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
+        <mxCell id="bgk1TdQtjLW1VvIc8pZ7-78" value="Route53 Hosted Zones" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=5;fontFamily=Helvetica;fontSize=14;labelBorderColor=none;swimlaneLine=1;shadow=1;labelBackgroundColor=none;textShadow=0;fillColor=#232F3E;fontColor=#FFFFFF;swimlaneFillColor=#000000;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-1">
           <mxGeometry x="1079" y="50" width="580" height="86" as="geometry" />
         </mxCell>
         <mxCell id="bgk1TdQtjLW1VvIc8pZ7-79" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;glass=0;align=left;verticalAlign=bottom;arcSize=33;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBorderColor=none;labelBackgroundColor=none;textShadow=0;" vertex="1" parent="bgk1TdQtjLW1VvIc8pZ7-78">
