@@ -39,7 +39,7 @@ Before you begin, ensure you have the following:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd tf-route53-phz-cross-vpc/A_Record/
+   cd tf-route53-phz-cross-vpc/A_record/
    ```
 3. Initialize Terraform:
    ```bash
@@ -67,7 +67,7 @@ Before you begin, ensure you have the following:
    Outputs:
    client_instance_private_ip = "10.10.10.84"
    connect_to_client_instance = "aws ec2-instance-connect ssh --instance-id i-04edc0836b71d48e6 --os-user ec2-user --connection-type eice --region eu-west-1"
-   my_app_dns_name = "app.services.internal"
+   my_app_dns_name = "app.myservices.internal"
    services_instance_private_dns = "ip-10-15-10-100.eu-west-1.compute.internal"
    services_instance_private_ip = "10.15.10.100"
 
@@ -88,26 +88,26 @@ Before you begin, ensure you have the following:
 3. Test DNS resolution of the custom DNS name for the EC2-based instance
    1. Using Ping
       ```bash
-       [ec2-user@ip-10-10-10-153 ~]$ ping app.services.internal
+       [ec2-user@ip-10-10-10-153 ~]$ ping app.myservices.internal
       ```
 
 
    2. Using nslookup
       ```bash
-      [ec2-user@ip-10-10-10-153 ~]$ nslookup app.services.internal
+      [ec2-user@ip-10-10-10-153 ~]$ nslookup app.myservices.internal
       ```
 
    3. Using CURL
       ```bash
-      [ec2-user@ip-10-10-10-153 ~]$ curl http://app.services.internal
+      [ec2-user@ip-10-10-10-153 ~]$ curl http://app.myservices.internal
       ```
 
 ## Clean up
 
 ### Remove all resources created by Terraform
-1. Navigate to the  `A_Record` directory:
+1. Navigate to the  `A_record` directory:
    ```bash
-   [ec2-user@ip-10-10-10-153 ~]$ cd tf-route53-phz-cross-vpc/A_Record/
+   [ec2-user@ip-10-10-10-153 ~]$ cd tf-route53-phz-cross-vpc/A_record/
    ```
 2. Destroy all Terraform resources:
    ```bash

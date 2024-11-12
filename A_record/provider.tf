@@ -10,7 +10,7 @@ terraform {
 provider "aws" {
   region                   = "eu-west-1"
   shared_credentials_files = ["~/.aws/credentials"]
-  profile                  = "aai-admin"
+  profile                  = "default"
   default_tags {
     tags = {
       useCase    = "tutorial"

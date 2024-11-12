@@ -3,7 +3,7 @@ resource "aws_ec2_transit_gateway" "main_tgw" {
   default_route_table_association = "disable"
 
   tags = merge(local.common_tags, {
-    Name = "main-region-tgw"
+    Name = "${local.name}-tgw"
   })
 
 }
@@ -15,7 +15,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "service_vpc_attachment" {
   transit_gateway_default_route_table_association = "false"
 
   tags = merge(local.common_tags, {
-    Name = "service-vpc-attachment"
+    Name = "service-vpc-att"
   })
 
 }
@@ -26,7 +26,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "client_vpc_attachment" {
   transit_gateway_default_route_table_association = "false"
 
   tags = merge(local.common_tags, {
-    Name = "client-vpc-attachment"
+    Name = "client-vpc-att"
   })
 
 }
@@ -35,7 +35,7 @@ resource "aws_ec2_transit_gateway_route_table" "services_rt" {
   transit_gateway_id = aws_ec2_transit_gateway.main_tgw.id
 
   tags = {
-    Name = "main-tgw-Route-Table"
+    Name = "${local.name}-tgw-rt"
   }
 }
 
@@ -54,7 +54,6 @@ resource "aws_ec2_transit_gateway_route" "service_to_client" {
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.services_rt.id
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.client_vpc_attachment.id
 }
-
 
 resource "aws_ec2_transit_gateway_route" "client_to_service" {
   destination_cidr_block         = local.services_vpc_cidr

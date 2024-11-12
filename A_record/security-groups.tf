@@ -21,7 +21,7 @@ module "services_instance_security_group" {
       to_port     = -1
       protocol    = "icmp"
       cidr_blocks = "0.0.0.0/0"
-      description = "allow icmp pings"
+      description = "allow ICMP pings"
     },
     {
       from_port   = 80
@@ -40,6 +40,9 @@ module "services_instance_security_group" {
       cidr_blocks = "0.0.0.0/0"
     }
   ]
+    tags          = merge(local.common_tags, {
+    Name          = "${local.name}-service-sg"
+  })
 }
 
 
@@ -76,7 +79,9 @@ module "client_instance_security_group" {
       cidr_blocks = "0.0.0.0/0"
     }
   ]
-
+    tags          = merge(local.common_tags, {
+    Name          = "${local.name}-client-sg"
+  })
 }
 
 
@@ -107,7 +112,9 @@ module "client_instance_connect_security_group" {
       cidr_blocks = "0.0.0.0/0"
     }
   ]
-
+    tags          = merge(local.common_tags, {
+    Name          = "${local.name}-icx-sg"
+  })
 }
 
 

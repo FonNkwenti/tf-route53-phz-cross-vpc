@@ -1,14 +1,13 @@
 
 resource "aws_lb" "app_alb" {
-  name               = "alb"
-  internal           = true
-  load_balancer_type = "application"
-  subnets            = module.services_vpc.private_subnets
-  security_groups    = [module.alb_sg.security_group_id]
+  name                              = "alb"
+  internal                          = true
+  load_balancer_type                = "application"
+  subnets                           = module.services_vpc.private_subnets
+  security_groups                   = [module.alb_sg.security_group_id]
 
-  enable_deletion_protection = false
-  enable_cross_zone_load_balancing = true 
-  enable_zonal_shift = true
+  enable_deletion_protection        = false
+  enable_cross_zone_load_balancing  = true 
 
   tags               = merge(
     local.common_tags,{ 

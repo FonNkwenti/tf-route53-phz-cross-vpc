@@ -18,6 +18,6 @@ output "connect_to_client_instance" {
 output "services_instance_private_dns" {
   value = module.services_instance.private_dns
 }
-output "my_app_dns_name" {
-  value = aws_route53_record.my_app.fqdn 
+output "instance_a_fqdn" {
+  value = aws_route53_record.instance_a.fqdn 
 }

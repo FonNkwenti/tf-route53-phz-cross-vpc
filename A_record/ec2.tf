@@ -12,6 +12,10 @@ module "services_instance" {
   subnet_id                   = module.services_vpc.private_subnets[0]
   vpc_security_group_ids      = [module.services_instance_security_group.security_group_id]
   private_ip = cidrhost(module.services_vpc.private_subnets_cidr_blocks[0], 100)
+
+    tags = merge(local.common_tags, {
+    Name = "${local.name}-service"
+  })
 }
 
 
@@ -27,4 +31,8 @@ module "client_instance" {
   key_name                    = var.ssh_key_pair
   subnet_id                   = module.client_vpc.private_subnets[0]
   vpc_security_group_ids      = [module.client_instance_security_group.security_group_id]
+
+    tags = merge(local.common_tags, {
+    Name = "${local.name}-client"
+  })
 }

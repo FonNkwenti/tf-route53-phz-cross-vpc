@@ -3,7 +3,7 @@ module "services_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"
 
-  name = "${local.name}-services-vpc"
+  name = "services-vpc"
   cidr = local.services_vpc_cidr
 
   azs             = local.main_azs
@@ -29,7 +29,7 @@ module "client_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"
 
-  name = "${local.name}-client-vpc"
+  name = "client-vpc"
   cidr = local.client_vpc_cidr
 
   azs             = local.main_azs
@@ -66,5 +66,7 @@ resource "aws_ec2_instance_connect_endpoint" "client_instance" {
   depends_on = [module.client_instance]
   security_group_ids = [module.client_instance_connect_security_group.security_group_id]
 
-  tags = local.common_tags
+    tags                = merge(local.common_tags, {
+    Name              = "${local.name}-alb-sg"
+  })
 }
