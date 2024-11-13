@@ -78,7 +78,7 @@ Before you begin, ensure you have the following:
    terraform apply --auto-approve
    ```
 
-7. Your will have the following outputs:
+7. Your will have similar to the below snippet:
 
    ```bash
    Apply complete! Resources: 27 added, 0 changed, 0 destroyed.
@@ -101,7 +101,7 @@ Before you begin, ensure you have the following:
 
    ```
 
-2. Test DNS resolution of the custom DNS name for the EC2-based instance
+2. Test DNS resolution of the custom DNS name from the EC2-based instance
    1. Using Ping
 
       ```bash
@@ -201,7 +201,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 | main_region | AWS Region to deploy resources | string | "eu-west-1" | yes |
 | account_id | AWS Account ID | string | n/a | yes |
 | environment | Environment name | string | "dev" | yes |
-| project_name | Name of the project | string | "tf-route53-phz-cross-vpc" | yes |
+| project_name | Name of the project | string | "tf-project-name" | yes |
 | service_name | Name of the service | string | "services.internal" | yes |
 | cost_center | Cost center identifier | string | "237" | yes |
 | ssh_key_pair | Name of the SSH key pair | string | n/a | yes |
