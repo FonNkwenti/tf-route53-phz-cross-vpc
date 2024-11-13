@@ -10,9 +10,9 @@ This project demonstrates how to create a Private Hosted Zone in Amazon Route 53
 
 The project is organized into different directories, each representing a specific use case for DNS record types:
 
-- `A_Record/`: Contains the implementation for DNS A record use case
-- `Alias/`: (Planned) Will contain the implementation for DNS Alias record use case
-- `CNAME/`: (Planned) Will contain the implementation for DNS CNAME record use case
+- `A_record/`: Contains the implementation for Amazon Route 53 "A" record use case.
+- `Alias_record/`: Contains the implementation for Amazon Route 53 "Alias" record use case.
+- `CNAME_record/`: (Planned) Will contain the implementation for DNS CNAME record use case.
 
 ## Key Components
 
@@ -38,7 +38,7 @@ The project is organized into different directories, each representing a specifi
 ## Usage
 
 1. Clone this repository
-2. Navigate to the desired use case directory (e.g., `A_Record/`)
+2. Navigate to the desired use case directory (e.g., `A_record/`)
 3. Initialize Terraform:
     ```bash
     terraform init
