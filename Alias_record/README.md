@@ -12,7 +12,7 @@ Before you begin, ensure you have the following:
 
 ## Architecture
 
-![Diagram](route53_phz_cross_vpc-phz-internal-alb-steps-dark)
+![Diagram](route53_phz_cross_vpc-phz-internal-alb-steps-dark.webp)
 
 ---
 
