@@ -20,6 +20,7 @@ variable "environment" {
 
 variable "project_name" {
   description = "The name of the project"
+  default     = "tf-project-name"
   type        = string
 }
 

@@ -46,7 +46,7 @@ The project is organized into different directories, each representing a specifi
 4. Review and modify the `terraform.tfvars` file as needed
 5. Plan and apply the Terraform configuration:
     ```bash
-    terraform Plan
+    terraform plan
     terraform apply
     ```
 
